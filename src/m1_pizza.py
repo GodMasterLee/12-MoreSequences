@@ -27,11 +27,11 @@ def main():
     #     4. When satisfied with your work, move onto the next test.
     # ------------------------------------------------------------------
 
-    run_test_generate_points_on_circle()
-    run_test_draw_points_on_circle()
-    run_test_pizza()
-    run_test_polygon()
-    # run_test_fancy_polygon()
+    # run_test_generate_points_on_circle()
+    # run_test_draw_points_on_circle()
+    # run_test_pizza()
+    # run_test_polygon()
+    run_test_fancy_polygon()
 
 
 def run_test_generate_points_on_circle():
@@ -592,7 +592,7 @@ def fancy_polygon(window, circle, number_of_lines, hops_to_next_point, color, th
 
     for k in range(len(generate_points_on_circle(circle, number_of_lines)) - 1):
         line = rg.Line(generate_points_on_circle(circle, number_of_lines)[k],
-                       generate_points_on_circle(circle, number_of_lines)[k + ])
+                       generate_points_on_circle(circle, number_of_lines)[k + 3])
         line.thickness = thickness
         line.color = color
         line.attach_to(window)
